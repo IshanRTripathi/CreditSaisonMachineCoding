@@ -1,0 +1,237 @@
+{
+	"info": {
+		"_postman_id": "b70d255d-a0be-44f9-8dbb-6d65852050da",
+		"name": "CreditSaisonMachineCoding",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17264801"
+	},
+	"item": [
+		{
+			"name": "Upload data from csv",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/ishanrtripathi/Downloads/Mobile_Food_Facility_Permit.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{CSBURL}}/api/csv/upload",
+					"host": [
+						"{{CSBURL}}"
+					],
+					"path": [
+						"api",
+						"csv",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all permits by page size",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{CSBURL}}/api/v1/permit/all?size=20",
+					"host": [
+						"{{CSBURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"permit",
+						"all"
+					],
+					"query": [
+						{
+							"key": "size",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find by location id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{CSBURL}}/api/v1/permit/location?locationId=364218",
+					"host": [
+						"{{CSBURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"permit",
+						"location"
+					],
+					"query": [
+						{
+							"key": "locationId",
+							"value": "364218"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find by applicant name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{CSBURL}}/api/v1/permit/applicant?applicantName=Marengo",
+					"host": [
+						"{{CSBURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"permit",
+						"applicant"
+					],
+					"query": [
+						{
+							"key": "applicantName",
+							"value": "Marengo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find permits by street name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{CSBURL}}/api/v1/permit/street?streetName=WATERLOO ST: MARENGO ST to BAY SHORE BLVD (40 - 99)",
+					"host": [
+						"{{CSBURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"permit",
+						"street"
+					],
+					"query": [
+						{
+							"key": "streetName",
+							"value": "WATERLOO ST: MARENGO ST to BAY SHORE BLVD (40 - 99)"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new permit",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"locationId\": 9211420,\n    \"applicant\": \"Ishan\",\n    \"facilityType\": \"Truck\",\n    \"cnn\": \"13456000\",\n    \"locationDescription\": \"WATERLOO ST: MARENGO ST to BAY SHORE BLVD (40 - 99)\",\n    \"address\": \"75 WATERLOO ST\",\n    \"blockLot\": \"5582001\",\n    \"block\": \"5582\",\n    \"lot\": \"001\",\n    \"permit\": \"18MFF-0100\",\n    \"status\": \"REQUESTED\",\n    \"foodItems\": \"Breakfast - egg: cheese: bacon: tomato: english muffin w/ butter: jam: or nutella: hard boiled eggs: fruit medley: water: coffee: milk: carrot juice: orange juice\",\n    \"x\": \"6010506.569\",\n    \"y\": \"2097034.497\",\n    \"latitude\": \"37.7386499426562\",\n    \"longitude\": \"-122.40618611429521\",\n    \"schedule\": \"http://bsm.sfdpw.org/PermitsTracker/reports/report.aspx?title=schedule&report=rptSchedule&params=permit=18MFF-0100&ExportPDF=1&Filename=18MFF-0100_schedule.pdf\",\n    \"daysHours\": \"Mo-We:7AM-7PM\",\n    \"approved\": \"\",\n    \"received\": \"20180817\",\n    \"priorPermit\": \"0\",\n    \"expirationDate\": \"\",\n    \"location\": \"(37.7386499426562, -122.40618611429521)\",\n    \"firePreventionDistricts\": \"10\",\n    \"policeDistricts\": \"3\",\n    \"supervisorDistricts\": \"8\",\n    \"zipCodes\": \"58\",\n    \"neighborhoods\": \"1\",\n    \"noisent\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{CSBURL}}/api/v1/permit",
+					"host": [
+						"{{CSBURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"permit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find closest truck to current location",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{CSBURL}}/api/v1/permit/closest-truck?latitude=17.7386499426562&longitude=-122.40618611429521",
+					"host": [
+						"{{CSBURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"permit",
+						"closest-truck"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "17.7386499426562"
+						},
+						{
+							"key": "longitude",
+							"value": "-122.40618611429521"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Expired permits",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{CSBURL}}/api/v1/permit/expired-permits?expirationDate=12/10/2020 12:00:00 AM",
+					"host": [
+						"{{CSBURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"permit",
+						"expired-permits"
+					],
+					"query": [
+						{
+							"key": "expirationDate",
+							"value": "12/10/2020 12:00:00 AM"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -24,3 +24,11 @@ You will build an API that allows the following operations on this data set<br>
 
 Assumptions:
 1. Search by street name functionality => street name is mapped to locationDescription column in the csv
+2. Search by expiration date, to find whose permits have expired => Functionality is implemented such that if expirationdate is not mentioned, search will be done only by status EXPIRED
+3. Add new food truck entry to the dataset => Only locationId and permit are marked as mandatory field i.e request will be successful only if these 2 fields are present at least, others may or may not be present
+
+How to make the requests:
+1. Install postman
+2. Import postman collection from json or from link, any would work
+3. Hit the endpoints to get the expected response
+4. There's an additional endpoint to upload new dataset(csv file) to the database

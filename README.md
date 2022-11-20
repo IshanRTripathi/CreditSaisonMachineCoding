@@ -29,6 +29,15 @@ Assumptions:
 
 How to make the requests:
 1. Install postman
-2. Import postman collection from [json](https://github.com/IshanRTripathi/CreditSaisonMachineCoding/blob/master/src/main/resources/static/CreditSaisonMachineCoding.postman_collection.json) or from [link](https://www.getpostman.com/collections/b15c9bd9161aac42af48), any would work
+2. Import postman collection from json - https://github.com/IshanRTripathi/CreditSaisonMachineCoding/blob/master/src/main/resources/static/CreditSaisonMachineCoding.postman_collection.json or from link - https://www.getpostman.com/collections/b15c9bd9161aac42af48, any would work
 3. Hit the endpoints to get the expected response along with the correct response code
 4. There's an additional endpoint to upload new dataset(csv file) to the database
+5. Link to supporting screenshots - https://github.com/IshanRTripathi/CreditSaisonMachineCoding/tree/master/src/main/resources/screenshots
+
+Other functionalities - 
+1. Added Validator classes to validate POST requests
+2. Added Junit test cases
+3. Added functionality to save data from csv files
+4. Added other endpoints like - 
+   1. get list(of defined size) of permits
+   2. Expired permits can search based on status and status + expirationDate

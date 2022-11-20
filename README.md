@@ -29,6 +29,6 @@ Assumptions:
 
 How to make the requests:
 1. Install postman
-2. Import postman collection from json or from link, any would work
-3. Hit the endpoints to get the expected response
+2. Import postman collection from [json](https://github.com/IshanRTripathi/CreditSaisonMachineCoding/blob/master/src/main/resources/static/CreditSaisonMachineCoding.postman_collection.json) or from [link](https://www.getpostman.com/collections/b15c9bd9161aac42af48), any would work
+3. Hit the endpoints to get the expected response along with the correct response code
 4. There's an additional endpoint to upload new dataset(csv file) to the database

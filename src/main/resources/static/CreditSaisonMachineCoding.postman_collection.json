@@ -22,10 +22,16 @@
 					]
 				},
 				"url": {
-					"raw": "{{CSBURL}}/api/csv/upload",
+					"raw": "http://ec2-43-206-116-76.ap-northeast-1.compute.amazonaws.com:9797/api/csv/upload",
+					"protocol": "http",
 					"host": [
-						"{{CSBURL}}"
+						"ec2-43-206-116-76",
+						"ap-northeast-1",
+						"compute",
+						"amazonaws",
+						"com"
 					],
+					"port": "9797",
 					"path": [
 						"api",
 						"csv",
@@ -41,10 +47,16 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{CSBURL}}/api/v1/permit/all?size=20",
+					"raw": "http://ec2-43-206-116-76.ap-northeast-1.compute.amazonaws.com:9797/api/v1/permit/all?size=20",
+					"protocol": "http",
 					"host": [
-						"{{CSBURL}}"
+						"ec2-43-206-116-76",
+						"ap-northeast-1",
+						"compute",
+						"amazonaws",
+						"com"
 					],
+					"port": "9797",
 					"path": [
 						"api",
 						"v1",
@@ -67,10 +79,16 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{CSBURL}}/api/v1/permit/location?locationId=364218",
+					"raw": "http://ec2-43-206-116-76.ap-northeast-1.compute.amazonaws.com:9797/api/v1/permit/location?locationId=364218",
+					"protocol": "http",
 					"host": [
-						"{{CSBURL}}"
+						"ec2-43-206-116-76",
+						"ap-northeast-1",
+						"compute",
+						"amazonaws",
+						"com"
 					],
+					"port": "9797",
 					"path": [
 						"api",
 						"v1",
@@ -93,10 +111,16 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{CSBURL}}/api/v1/permit/applicant?applicantName=Marengo",
+					"raw": "http://ec2-43-206-116-76.ap-northeast-1.compute.amazonaws.com:9797/api/v1/permit/applicant?applicantName=Marengo",
+					"protocol": "http",
 					"host": [
-						"{{CSBURL}}"
+						"ec2-43-206-116-76",
+						"ap-northeast-1",
+						"compute",
+						"amazonaws",
+						"com"
 					],
+					"port": "9797",
 					"path": [
 						"api",
 						"v1",
@@ -119,10 +143,16 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{CSBURL}}/api/v1/permit/street?streetName=WATERLOO ST: MARENGO ST to BAY SHORE BLVD (40 - 99)",
+					"raw": "http://ec2-43-206-116-76.ap-northeast-1.compute.amazonaws.com:9797/api/v1/permit/street?streetName=WATERLOO ST: MARENGO ST to BAY SHORE BLVD (40 - 99)",
+					"protocol": "http",
 					"host": [
-						"{{CSBURL}}"
+						"ec2-43-206-116-76",
+						"ap-northeast-1",
+						"compute",
+						"amazonaws",
+						"com"
 					],
+					"port": "9797",
 					"path": [
 						"api",
 						"v1",
@@ -164,10 +194,16 @@
 					}
 				},
 				"url": {
-					"raw": "{{CSBURL}}/api/v1/permit",
+					"raw": "http://ec2-43-206-116-76.ap-northeast-1.compute.amazonaws.com:9797/api/v1/permit",
+					"protocol": "http",
 					"host": [
-						"{{CSBURL}}"
+						"ec2-43-206-116-76",
+						"ap-northeast-1",
+						"compute",
+						"amazonaws",
+						"com"
 					],
+					"port": "9797",
 					"path": [
 						"api",
 						"v1",
@@ -183,10 +219,16 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{CSBURL}}/api/v1/permit/closest-truck?latitude=17.7386499426562&longitude=-122.40618611429521",
+					"raw": "http://ec2-43-206-116-76.ap-northeast-1.compute.amazonaws.com:9797/api/v1/permit/closest-truck?latitude=17.7386499426562&longitude=-122.40618611429521",
+					"protocol": "http",
 					"host": [
-						"{{CSBURL}}"
+						"ec2-43-206-116-76",
+						"ap-northeast-1",
+						"compute",
+						"amazonaws",
+						"com"
 					],
+					"port": "9797",
 					"path": [
 						"api",
 						"v1",
@@ -213,10 +255,16 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{CSBURL}}/api/v1/permit/expired-permits?expirationDate=12/10/2020 12:00:00 AM",
+					"raw": "http://ec2-43-206-116-76.ap-northeast-1.compute.amazonaws.com:9797/api/v1/permit/expired-permits?expirationDate=12/10/2020 12:00:00 AM",
+					"protocol": "http",
 					"host": [
-						"{{CSBURL}}"
+						"ec2-43-206-116-76",
+						"ap-northeast-1",
+						"compute",
+						"amazonaws",
+						"com"
 					],
+					"port": "9797",
 					"path": [
 						"api",
 						"v1",
